@@ -1,6 +1,6 @@
 <?php
 
-namespace MWI\LaravelKit;
+namespace MWI\LaravelForms;
 
 use App\Observers\UserObserver;
 use App\User;
