@@ -7,7 +7,7 @@
         {
             "name": "Ryan Doss",
             "email": "rd@buildmidwestern.com"
-        },
+        }
     ],
     "require": {
         "laravelcollective/html": "^5.5"
