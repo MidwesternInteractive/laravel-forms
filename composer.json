@@ -1,0 +1,30 @@
+{
+    "name": "mwi/laravel-forms",
+    "description": "MWI Starter Forms extends Laravel Collective HTML",
+    "keywords": ["forms", "laravel"],
+    "license": "MIT",
+    "authros": [
+        {
+            "name": "Ryan Doss",
+            "email": "rd@buildmidwestern.com"
+        },
+    ],
+    "require": {
+        "laravelcollective/html": "^5.5",
+    },
+    "autoload": {
+        "psr-4": { "MWI\\LaravelForms\\": "src/" }
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "MWI\\LaravelForms\\ServiceProvider"
+            ]
+        }
+    }
+}
