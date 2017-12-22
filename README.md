@@ -52,16 +52,22 @@ Here are the current tags available and how to best utilize them.
 ## Text Field
 Only the first parameter is required.
 
-Variations available are `mwitext`, `mwiemail` and `mwinumber`.
+Variations available are `mwitext`, `mwitextarea`, `mwidate`, `mwidaterange`, `mwiemail` and `mwinumber`.
 ```php
 Form::mwitext('field_name')
-Form::mwitext('field_name_two', $default_value, ['class' => 'class-name'])
+Form::mwitext('field_name_two', $default_value, ['class' => 'class-name'], 'Custom Label')
 
 // No default value with attributes
 Form::mwitext('name', null, ['class' => 'class-name'])
 ```
 
+## Radio Options
+```php
+Form::mwiradio('Set Label', 'field_name', ['option_one', 'option_two'], 'option_one', ['class' => 'class-name'])
+```
+
 ## Select Field
+Variations available are `mwipass`, `mwiselect` and `mwifilter`.
 ```php
 Form::mwiselect('field_name', $options)
 Form::mwiselect('field_name_two', ['this' => 'that', 'them' => 'they'], $default_value, ['class' => 'class-name'])
