@@ -1,6 +1,6 @@
 <div class="form-group">
     <fieldset>
-    	<legend>{{ $legend }}</legend>
+    	@if ($legend)<legend>{{ $legend }}</legend>@endif
         @foreach ($values as $key => $value)
             <div class="am-radio inline">
                 {{ Form::radio($name, $value, $default, array_merge($attributes, ['id' => $name . '_' . $key])) }}
