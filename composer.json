@@ -3,9 +3,10 @@
     "description": "MWI Starter Forms extends Laravel Collective HTML",
     "keywords": ["forms", "laravel"],
     "license": "MIT",
-    "authros": [
+    "authors": [
         {
             "name": "Ryan Doss",
+            "company": "Midwestern Interactive",
             "email": "rd@buildmidwestern.com"
         }
     ],
