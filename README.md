@@ -20,7 +20,7 @@ If you're on laravel 5.5 or later the service provider will be automatially load
 ```php
 'providers' => [
     // ...
-    MWI\Laravel\LaravelFormsServiceProvider::class,
+    MWI\LaravelForms\ServiceProvider::class,
     // ...
 ],
 ```
@@ -87,33 +87,30 @@ All tags are wrapped in a `div.form-group` and contain a label, input and error 
         {{ Form::mwitext('field2_name', $field2_value, ['required', 'class' => 'text-red']) }}
     </div>
 </div>
+```
 
 Additionaly the password field already contains col-6 grids, so...
 ```html
 <div class="row">
-    <div class="col-xs-12">
-        {{ Form::mwipass('password', ['required']) }}
-    </div>
+    {{ Form::mwipass('password', ['required']) }}
 </div>
 ```
 
 Would produce...
 ```html
 <div class="row">
-    <div class="col-xs-12">
-        <div class="col-md-6">
-            <div class="form-group">
-                {{ Form::label('password', null, ['class' => 'control-label']) }}
-                {{ Form::password('password', ['class' => 'form-control', 'id' => 'password', 'required']) }}
-                <small class="help-block">{{ $errors->first('password') }}</small>
-            </div>
+    <div class="col-md-6">
+        <div class="form-group">
+            {{ Form::label('password', null, ['class' => 'control-label']) }}
+            {{ Form::password('password', ['class' => 'form-control', 'id' => 'password', 'required']) }}
+            <small class="help-block">{{ $errors->first('password') }}</small>
         </div>
-        <div class="col-md-6">
-            <div class="form-group">
-                {{ Form::label('password_confirmation', null, ['class' => 'control-label']) }}
-                {{ Form::password('password_confirmation' . '_confirmation', ['class' => 'form-control']) }}
-                <small class="help-block">{{ $errors->first('password_confirmation') }}</small>
-            </div>
+    </div>
+    <div class="col-md-6">
+        <div class="form-group">
+            {{ Form::label('password_confirmation', null, ['class' => 'control-label']) }}
+            {{ Form::password('password_confirmation' . '_confirmation', ['class' => 'form-control']) }}
+            <small class="help-block">{{ $errors->first('password_confirmation') }}</small>
         </div>
     </div>
 </div>
