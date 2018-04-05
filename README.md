@@ -46,6 +46,12 @@ If you have't already you can add Laravel Collective HTML aliases
 ],
 ```
 
+## Publish
+Last but not least be sure to publish
+```shell
+php artisan vendor:publish
+```
+
 # Usage
 Here are the current tags available and how to best utilize them.
 
