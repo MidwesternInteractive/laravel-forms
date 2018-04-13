@@ -40,7 +40,7 @@ If you have't already you can add Laravel Collective HTML aliases
 ## Publish
 Last but not least be sure to publish
 ```shell
-php artisan vendor:publish
+php artisan vendor:publish --provider="MWI\LaravelForms\ServiceProvider"
 ```
 
 # Usage
