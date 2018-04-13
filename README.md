@@ -1,15 +1,6 @@
 # MWI Laravel Forms
 MWI Laravel froms is an extension of [Laravel Collective Forms & HTML](https://laravelcollective.com/docs/master/html). It utilized components to build out bootsrap ready form inputs with [parsley](http://parsleyjs.org/) client side validation and select2 funcionality.
 
-## Example Markup
-```html
-<div class="form-group">
-    {{ Form::label($name, null, ['class' => 'control-label']) }}
-    {{ Form::email($name, $value, array_merge(['class' => 'form-control', 'parsley-type' => 'email'], $attributes)) }}
-    <small class="help-block">{{ $errors->first($name) }}</small>
-</div>
-```
-
 # Installation
 ```shell
 $ composer require mwi/laravel-forms
