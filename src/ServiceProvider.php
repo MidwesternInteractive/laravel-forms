@@ -28,6 +28,7 @@ class ServiceProvider extends LaravelServiceProvider
         Form::component('mwiradio', 'components.radio', ['legend', 'name', 'values' => [], 'default' => null, 'attributes' => [], 'use_key' => false]);
         Form::component('mwiselect', 'components.select', ['name', 'options' => [], 'value' => null, 'attributes' => [], 'label' => null]);
         Form::component('mwitext', 'components.text', ['name', 'value' => null, 'attributes' => [], 'label' => null]);
+        Form::component('mwibarcode', 'components.barcode', ['name', 'value' => null, 'attributes' => [], 'label' => null]);
         Form::component('mwitextarea', 'components.textarea', ['name', 'value' => null, 'attributes' => [], 'label' => null]);
     }
 }
